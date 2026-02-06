@@ -1,14 +1,10 @@
-// import static org.junit.jupiter.api.Assertions.assertEquals;
-
-// import org.junit.jupiter.api.Test;
-
+import java.util.*;
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    Heap heap = new Heap();
+    heap.insert(10);
+    heap.insert(20);
+    heap.insert(15);
+    heap.insert(40);
   }
-
-  // @Test
-  // void addition() {
-  //     assertEquals(2, 1 + 1);
-  // }
 }
