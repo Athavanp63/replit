@@ -42,7 +42,7 @@ class Heap {
       return;
     }
     int p = parent(i);
-    if(list.get(p)>list.get(i))
+    if(list.get(p)<list.get(i))
     {
       swap(p,i);
       upheap(p);
@@ -61,24 +61,25 @@ class Heap {
     }
     return temp;
   }
+  
   private void downheap(int i)
   {
-    int minIndex = i;
+    int maxIndex = i;
     int left = leftChild(i);
     int right = rightChild(i);
 
-    if(left<list.size() && list.get(left)<list.get(minIndex))
+    if(left<list.size() && list.get(left)>list.get(maxIndex))
     {
-      minIndex = left;
+      maxIndex = left;
     }
-    if(right<list.size() && list.get(right)<list.get(minIndex))
+    if(right<list.size() && list.get(right)>list.get(maxIndex))
     {
-      minIndex = right;
+      maxIndex = right;
     }
-    if(i!=minIndex)
+    if(i!=maxIndex)
     {
-      swap(i,minIndex);
-      downheap(minIndex);
+      swap(i,maxIndex);
+      downheap(maxIndex);
     }
   }
 }
