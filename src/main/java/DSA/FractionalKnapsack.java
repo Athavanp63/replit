@@ -1,3 +1,6 @@
+package DSA;
+import java.util.Arrays;
+
 class FractionalKnapsack {
    public static void main(String[] args)
   {
