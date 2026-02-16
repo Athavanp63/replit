@@ -88,4 +88,4 @@ outputType = "console"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "javac src/main/java/DSA/FractionalKnapsack.java -d out && java -cp out DSA.FractionalKnapsack"
+args = "javac src/main/java/DSA/CoinChange.java -d out && java -cp out DSA.CoinChange"

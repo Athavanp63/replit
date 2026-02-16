@@ -1,3 +1,4 @@
+package DSA;
 import java.util.*;
 class CoinChange
   {
@@ -16,7 +17,7 @@ class CoinChange
             {
               if(i-coin>=0)
               {
-                dp[i] = Math.min(dp[i], dp(i-coin)+1);
+                dp[i] = Math.min(dp[i], dp[i-coin]+1);
               }
             }
         }
@@ -24,6 +25,9 @@ class CoinChange
       {
         System.out.println("-1");
       }
-      System.out.println(dp[amount]);
+      else
+      {
+        System.out.println(dp[amount]);
+      }
     }
   }
