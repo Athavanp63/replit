@@ -95,4 +95,4 @@ outputType = "console"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "javac src/main/java/DSA/Main.java -d out && java -cp out DSA.Main"
+args = "javac src/main/java/DSA/CoinChange.java -d out && java -cp out DSA.CoinChange"

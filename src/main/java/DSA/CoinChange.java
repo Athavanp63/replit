@@ -1,3 +1,4 @@
+package DSA;
 import java.util.*;
 class CoinChange
   {
@@ -24,6 +25,9 @@ class CoinChange
       {
         System.out.println("-1");
       }
-      System.out.println(dp[amount]);
+      else
+      {
+        System.out.println(dp[amount]);
+      }
     }
   }
