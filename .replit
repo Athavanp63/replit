@@ -60,7 +60,14 @@ classPaths = ["."]
 mainClass = "Main"
 
 [deployment]
-build = ["javac", "-classpath", ".:target/dependency/*", "-d", ".", "$(find . -type f -name '*.java')"]
+build = [
+  "javac",
+  "-classpath",
+  ".:target/dependency/*",
+  "-d",
+  ".",
+  "$(find . -type f -name '*.java')",
+]
 run = ["java", "-classpath", ".:target/dependency/*", "Main"]
 deploymentTarget = "cloudrun"
 
@@ -88,4 +95,4 @@ outputType = "console"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "javac src/main/java/DSA/CoinChange.java -d out && java -cp out DSA.CoinChange"
+args = "javac src/main/java/DSA/Main.java -d out && java -cp out DSA.Main"
