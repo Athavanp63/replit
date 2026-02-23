@@ -25,9 +25,6 @@ class CoinChange
       {
         System.out.println("-1");
       }
-      else
-      {
-        System.out.println(dp[amount]);
-      }
+      System.out.println(dp[amount]);
     }
   }
