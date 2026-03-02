@@ -95,4 +95,4 @@ outputType = "console"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "javac src/main/java/DSA/MeetingRoom.java -d out && java -cp out DSA.MeetingRoom"
+args = "javac src/main/java/DSA/MinPlatform.java -d out && java -cp out DSA.MinPlatform"
